@@ -1,0 +1,144 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--/-:cnd -->
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B9DC4487-7908-4459-89E3-92D3465140EA}</ProjectGuid>
+    <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>easyfft.Droid</RootNamespace>
+    <AssemblyName>easyfft.Droid</AssemblyName>
+    <TargetFrameworkVersion>v8.1</TargetFrameworkVersion>
+    <AndroidApplication>True</AndroidApplication>
+    <AndroidResgenFile>Resources\Resource.Designer.cs</AndroidResgenFile>
+    <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
+    <MonoAndroidResourcePrefix>Resources</MonoAndroidResourcePrefix>
+    <MonoAndroidAssetsPrefix>Assets</MonoAndroidAssetsPrefix>
+    <AndroidUseLatestPlatformSdk>true</AndroidUseLatestPlatformSdk>
+    <JavaMaximumHeapSize>1G</JavaMaximumHeapSize>
+    <AndroidSupportedAbis>armeabi-v7a;armeabi;x86;arm64-v8a;x86_64</AndroidSupportedAbis>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AndroidLinkMode>None</AndroidLinkMode>
+    <AotAssemblies>false</AotAssemblies>
+    <EnableLLVM>false</EnableLLVM>
+    <BundleAssemblies>false</BundleAssemblies>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AndroidManagedSymbols>true</AndroidManagedSymbols>
+    <AndroidUseSharedRuntime>false</AndroidUseSharedRuntime>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Acr.UserDialogs">
+      <Version>7.0.1</Version>
+    </PackageReference>
+    <PackageReference Include="Autofac">
+      <Version>4.8.0</Version>
+    </PackageReference>
+    <PackageReference Include="Autofac.Extras.MvvmCross">
+      <Version>4.0.2</Version>
+    </PackageReference>
+    <PackageReference Include="FFTW.NET">
+      <Version>1.0.1</Version>
+    </PackageReference>
+    <PackageReference Include="MvvmCross">
+      <Version>5.7.0</Version>
+    </PackageReference>
+    <PackageReference Include="MvvmCross.Binding" Version="5.7.0" />
+    <PackageReference Include="MvvmCross.Core" Version="5.7.0" />
+    <PackageReference Include="MvvmCross.Platform" Version="5.7.0" />
+    <PackageReference Include="MvvmCross.Droid.Support.Core.UI" Version="5.7.0" />
+    <PackageReference Include="MvvmCross.Droid.Support.Fragment" Version="5.7.0" />
+    <PackageReference Include="MvvmCross.Droid.Support.V7.AppCompat" Version="5.7.0" />
+    <PackageReference Include="MvvmCross.Droid.Support.V7.RecyclerView" Version="5.7.0" />
+    <PackageReference Include="MvvmCross.StarterPack">
+      <Version>5.7.0</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.Android.Support.Animated.Vector.Drawable" Version="27.0.2" />
+    <PackageReference Include="Xamarin.Android.Support.Annotations" Version="27.0.2" />
+    <PackageReference Include="Xamarin.Android.Support.Compat" Version="27.0.2" />
+    <PackageReference Include="Xamarin.Android.Support.Core.UI" Version="27.0.2" />
+    <PackageReference Include="Xamarin.Android.Support.Core.Utils" Version="27.0.2" />
+    <PackageReference Include="Xamarin.Android.Support.Design" Version="27.0.2" />
+    <PackageReference Include="Xamarin.Android.Support.Fragment" Version="27.0.2" />
+    <PackageReference Include="Xamarin.Android.Support.Media.Compat" Version="27.0.2" />
+    <PackageReference Include="Xamarin.Android.Support.Transition" Version="27.0.2" />
+    <PackageReference Include="Xamarin.Android.Support.v7.AppCompat" Version="27.0.2" />
+    <PackageReference Include="Xamarin.Android.Support.v7.RecyclerView" Version="27.0.2" />
+    <PackageReference Include="Xamarin.Build.Download" Version="0.4.11" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Mono.Android" />
+    <Reference Include="Mono.Android.Export" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\drawable-hdpi\" />
+    <Folder Include="Resources\drawable-mdpi\" />
+    <Folder Include="Resources\drawable-xhdpi\" />
+    <Folder Include="Resources\drawable-xxhdpi\" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\splash.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\ic_launcher.png" />
+    <AndroidResource Include="Resources\mipmap-mdpi\ic_launcher.png" />
+    <AndroidResource Include="Resources\mipmap-xhdpi\ic_launcher.png" />
+    <AndroidResource Include="Resources\mipmap-xxhdpi\ic_launcher.png" />
+    <AndroidResource Include="Resources\mipmap-xxxhdpi\ic_launcher.png" />
+    <AndroidResource Include="Resources\layout\MainView.axml" />
+    <AndroidResource Include="Resources\layout\SplashScreen.axml" />
+    <AndroidResource Include="Resources\layout\toolbar.axml" />
+    <AndroidResource Include="Resources\values\arrays.xml" />
+    <AndroidResource Include="Resources\values\colors.xml" />
+    <AndroidResource Include="Resources\values\dimens.xml" />
+    <AndroidResource Include="Resources\values\integers.xml" />
+    <AndroidResource Include="Resources\values\SplashStyle.xml" />
+    <AndroidResource Include="Resources\values\strings.xml" />
+    <AndroidResource Include="Resources\values\styles.xml" />
+    <AndroidResource Include="Resources\values-v21\styles.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\AndroidManifest.xml" />
+    <None Include="Resources\AboutResources.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DebugTrace.cs" />
+    <Compile Include="LinkerPleaseInclude.cs" />
+    <Compile Include="Services\AudioStream_Android.cs" />
+    <Compile Include="Setup.cs" />
+    <Compile Include="SplashScreen.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Views\MainView.cs" />
+    <Compile Include="Views\BaseView.cs" />
+    <Compile Include="Resources\Resource.Designer.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\AboutAssets.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\easyfft.Core\easyfft.Core.csproj">
+      <Project>{0597aee8-22b3-4635-86bf-fb832399983e}</Project>
+      <Name>easyfft.Core</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
+</Project>

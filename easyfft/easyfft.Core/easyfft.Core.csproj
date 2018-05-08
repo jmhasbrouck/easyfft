@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--/-:cnd -->
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <PackageTargetFallback>portable-net45+win8+wpa81</PackageTargetFallback>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Acr.UserDialogs" Version="7.0.1" />
+    <PackageReference Include="Autofac" Version="4.8.0" />
+    <PackageReference Include="Autofac.Extras.MvvmCross" Version="4.0.2" />
+    <PackageReference Include="MathNet.Numerics" Version="4.4.1" />
+    <PackageReference Include="MvvmCross" Version="5.7.0" />
+    <PackageReference Include="MvvmCross.Core" Version="5.7.0" />
+    <PackageReference Include="MvvmCross.Platform" Version="5.7.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="System">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\ReferenceAssemblies\Microsoft\Framework\Xamarin.iOS\v1.0\System.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+    
+</Project>
